@@ -4,6 +4,8 @@ buildscript {
     repositories {
         mavenLocal()
         mavenCentral()
+        // Legacy GWT plugin 0.6 is not available from Maven Central.
+        maven { url "https://repo.cuba-platform.com/content/groups/work/" }
         maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
     }
     dependencies {
